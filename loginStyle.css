@@ -1,0 +1,42 @@
+*{margin: 0; padding: 0; border: 0;}
+body{
+    background: #8ac4ff;
+}
+.main{
+    width: 600px;
+    font-size: 20px;
+    margin: 150px auto;
+    padding: 20px ;
+    border-radius: 20px;
+    background: rgba(200,200,200,0.7) ;
+}
+h1{
+    text-align: center;
+    color: #3832ff;
+    font-weight: bold;
+}
+table{
+    width: 500px;
+    margin: 15px auto;
+}
+
+table tr td{
+    padding: 5px 0;
+
+}
+input[type=text],input[type=password]{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 250px;
+}
+#submit{
+    display: block;
+    width: 150px;
+    height:30px;
+    background: #3aafff;
+}
+#forget{
+
+    text-align: center;
+}

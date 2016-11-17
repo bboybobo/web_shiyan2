@@ -1,0 +1,23 @@
+create table webuser(
+    userId varchar(10) primary key,
+    userName varchar(20),
+    userPwd varchar(20),
+    userEmail varchar(20)
+);
+
+insert into webuser values('001','admin','admin','111@163.com');
+
+insert into webuser values('001','admin','admin','admin@163.com');
+create table book(
+    bookId varchar(10) primary key,
+    bookName varchar(30),
+    price number,
+    kucun number
+);
+
+create table shoppingCart(
+    userId varchar(20) references user(userId),
+    bookId varchar(10) references book(bookId),
+    amount int,
+    cost number
+);
