@@ -1,0 +1,102 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(82, 204, 143, 0.13);
+}
+.main{
+    width: 1000px;
+    margin: 5px auto;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    background:white;
+}
+.main .header{
+    width: 960px;
+    height: 40px;
+    background: #ffbf1f;
+    border: 1px solid #ccc;
+    margin: 20px auto 2px;
+    position: relative;
+}
+
+.main .header a{
+    text-decoration: none;
+    color: blue;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.main .header ul li,.main .mainbody .fenye ul li{
+    display: block;
+    float: left;
+    padding:5px ;
+
+}
+.main .header ul li a{
+    display: block;
+    float: left;
+    background: rgba(219, 255, 141, 0.68);
+    padding: 2px 4px;
+    /*text-decoration: none;*/
+}
+
+.main .mainbody{
+    clear: both;
+    width: 960px;
+    /*border: 1px solid #ccc;*/
+    margin: 0 auto;
+    position: relative;
+}
+.main .mainbody table{
+    width: 100%;
+    text-align: center;
+}
+.main .mainbody table #tableHeader{
+    background: rgba(240, 255, 127, 0.69);
+}
+
+.main .mainbody .fenye{
+    text-align: center;
+}
+.main .mainbody .fenye ul{
+    position: absolute;
+    left: 37%;
+    align-content: center;
+}
+
+#shoppingCart{
+    display: block;
+    /*clear: both;*/
+    float: right;
+    color:red;
+
+}
+.clearFloat{
+    clear: both;
+}
+
+img{
+    width: 135px;
+    height: 200px;
+}
+table {
+    border-collapse: collapse;
+}
+table,tr,td{
+    border: 1px solid lightpink;
+}
+td{
+    font-weight: bold;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    color: #3832ff;
+    font-weight: bold;
+}

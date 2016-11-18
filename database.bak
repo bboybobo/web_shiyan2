@@ -1,0 +1,40 @@
+一、用户表
+create table webuser(
+    userId varchar(10) primary key,
+    userName varchar(20),
+    userPwd varchar(20),
+    userEmail varchar(20)
+);
+
+insert into webuser values('001','admin','admin','111@163.com');
+
+二、图书表
+create table book(
+    bookId varchar(10) primary key,
+    bookName varchar(30),
+    price number,
+    kucun number
+);
+
+insert into book values('001','《活着》',21.00,501);
+insert into book values('002','《追风筝的人》',14.50,58);
+insert into book values('003','《灿烂千阳》',22.00,420);
+insert into book values('004','《简爱》',27.60,321);
+insert into book values('005','《汤姆索亚历险记》',6.00,14);
+insert into book values('006','《谁动了我的奶酪》',20.00,933);
+
+insert into book values('007','《java》',21.00,501);
+insert into book values('008','《iOS开发》',21.00,501);
+insert into book values('009','《活着》',21.00,501);
+insert into book values('010','《活着》',21.00,501);
+insert into book values('011','《活着》',21.00,501);
+
+三、购物车表
+create table shoppingCart(
+    userId varchar(20) references user(userId),
+    bookId varchar(10) references book(bookId),
+    amount int,
+    cost number
+);
+
+select * from (select rownum R,bookId,bookName,price,kucun from book where rownum<2) where  R>0;

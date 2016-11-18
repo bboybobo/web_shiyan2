@@ -7,7 +7,6 @@ create table webuser(
 
 insert into webuser values('001','admin','admin','111@163.com');
 
-insert into webuser values('001','admin','admin','admin@163.com');
 create table book(
     bookId varchar(10) primary key,
     bookName varchar(30),
